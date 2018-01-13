@@ -83,7 +83,7 @@ public class mainController {
             Parent parent = fxmlLoader.load();
             NewGameController child = fxmlLoader.getController();
             child.setGameSpecsChosenCallback(callback -> tempGameSpecs = callback);
-            Scene scene = new Scene(parent, 280, 290);
+            Scene scene = new Scene(parent, 370, 290);
             stage.setTitle("New 2-Player Game");
             stage.setScene(scene);
             stage.initModality(Modality.WINDOW_MODAL);
