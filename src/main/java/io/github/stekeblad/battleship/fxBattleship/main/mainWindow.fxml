@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane fx:id="mainWindowPane" prefHeight="701.0" prefWidth="1097.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.github.stekeblad.battleship.fxBattleship.main.mainController">
+   <HBox layoutX="14.0" layoutY="65.0" prefHeight="40.0" prefWidth="481.0" spacing="25.0" style="-fx-background-color: dddddd;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <padding>
+         <Insets left="10.0" top="5.0" />
+      </padding>
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets>
+      <Button fx:id="btn_newGame" mnemonicParsing="false" onAction="#onNewGameClicked" text="New Game" />
+      <Label fx:id="txt_phase">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="txt_player">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_endTurn" disable="true" mnemonicParsing="false" onAction="#onEndTurnClicked" text="End Turn" />
+   </HBox>
+   <HBox layoutY="668.0" prefHeight="30.0" prefWidth="1097.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <Label fx:id="txt_whatToDo" text="Place your ships in the right grid      Placing ship of size:">
+         <HBox.margin>
+            <Insets top="5.0" />
+         </HBox.margin>
+      </Label>
+      <TextField fx:id="txt_shipSize" editable="false" prefHeight="25.0" prefWidth="30.0" promptText="0" />
+      <Button fx:id="btn_shipOrientation" mnemonicParsing="false" onAction="#onShipOrientationClicked" text="vertically" />
+   </HBox>
+</AnchorPane>
